@@ -1,0 +1,29 @@
+# Projects shown on the homepage #projects section.
+# Each item:
+#   title:  required - project name
+#   role:   optional - "your role @ team/org" (shown under title in muted text)
+#   desc:   optional - 1-2 line description
+#   links:  optional - list of { label, href } pairs; common labels: Demo, Code, PDF, Blog
+#
+# To add: append a new "- title: ..." block. Order = display order.
+# To remove: delete the block.
+
+- title: "TODO: Sample Project Alpha"
+  role: "TODO: Lead Author @ Your Lab"
+  desc: "TODO: One-line description of what this project does and why it matters."
+  links:
+    - label: "PDF"
+      href: "#"
+    - label: "Code"
+      href: "#"
+    - label: "Demo"
+      href: "#"
+
+- title: "TODO: Sample Project Beta"
+  role: "TODO: Contributor @ Open-source"
+  desc: "TODO: Another short description here."
+  links:
+    - label: "Code"
+      href: "#"
+    - label: "Blog"
+      href: "#"

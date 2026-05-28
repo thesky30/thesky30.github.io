@@ -1,0 +1,31 @@
+# Models, datasets, and databases you've built or published.
+# Rendered on the homepage in the "Models & Databases" section.
+# Each item:
+#   title: required - the work's name
+#   type:  optional - small uppercase badge (e.g. Model / Database / Dataset / Tool / Benchmark)
+#   desc:  optional - 1-2 line description (the "intro")
+#   links: optional - list of { label, href }. First link is the main one.
+#          Common labels: Site, Paper, Code, HuggingFace, Demo, Docs.
+#
+# To add: append a new "- title: ..." block. Order = display order.
+# To remove: delete the block.
+
+- title: "TODO: 你的模型名字"
+  type: "Model"
+  desc: "TODO: 一两句话描述这个模型 —— 它做什么、规模/能力、为什么有趣。"
+  links:
+    - label: "HuggingFace"
+      href: "#"
+    - label: "Paper"
+      href: "#"
+    - label: "Code"
+      href: "#"
+
+- title: "TODO: 你的数据库/数据集名字"
+  type: "Database"
+  desc: "TODO: 数据库包含什么、来源、覆盖范围,以及为什么独特。"
+  links:
+    - label: "Site"
+      href: "#"
+    - label: "Docs"
+      href: "#"

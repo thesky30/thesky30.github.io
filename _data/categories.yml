@@ -1,0 +1,17 @@
+# Blog 分类体系 —— /blog/ 顶部的过滤 chip 完全由这个文件决定。
+#   name: 大分类(对应文章 frontmatter 的 category 字段)
+#   subs: 该大分类下的小分类列表(对应文章 frontmatter 的 tags 字段)
+# 文章数自动统计,无需手填。增删/改名/调顺序都改这里即可。
+# 顺序 = 显示顺序。subs 为空列表 [] 表示该大分类暂无小分类。
+
+- name: 投研
+  subs: [公司研究, 行业研究, 商业模式, 调研札记, 区域经济研究]
+
+- name: 量化
+  subs: [因子研究, 策略复现,]
+
+- name: AI
+  subs: [LLM理论, 工程实践]
+
+- name: 读书笔记
+  subs: []
