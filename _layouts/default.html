@@ -46,11 +46,13 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
     {% endif %}
+    <link rel="stylesheet" href="{{ '/assets/css/site-updates.css' | relative_url }}">
+    <script defer src="{{ '/assets/js/refinements.js' | relative_url }}"></script>
   </head>
   <body>
     <nav class="topnav" id="topnav">
       <div class="topnav-inner">
-        <a class="topnav-brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+        <a class="topnav-brand" href="{{ '/' | relative_url }}"><svg class="home-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 11 10h-3v9h-6v-7h-4v7H4v-9H1L12 2Z"/></svg><span>Home</span></a>
         <button class="topnav-toggle" aria-label="Toggle menu" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
@@ -69,64 +71,6 @@
       <p class="page-footnote"><small>Powered by Jekyll and <a href="https://github.com/yaoyao-liu/minimal-light" target="_blank" rel="noopener">Minimal Light</a> theme.</small></p>
       {% endif %}
     </main>
-
-    <script>
-      (function () {
-        var toggle = document.querySelector('.topnav-toggle');
-        var links = document.querySelector('.topnav-links');
-        if (toggle && links) {
-          toggle.addEventListener('click', function () {
-            var open = links.classList.toggle('is-open');
-            toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-          });
-          links.addEventListener('click', function (e) {
-            if (e.target.tagName === 'A') {
-              links.classList.remove('is-open');
-              toggle.setAttribute('aria-expanded', 'false');
-            }
-          });
-        }
-      })();
-
-      (function () {
-        var triggers = document.querySelectorAll('[data-qr-target]');
-        if (!triggers.length) return;
-        function closeAll() {
-          document.querySelectorAll('.qr-popover.is-open').forEach(function (p) {
-            p.classList.remove('is-open');
-          });
-          document.querySelectorAll('[data-qr-target]').forEach(function (t) {
-            t.setAttribute('aria-expanded', 'false');
-          });
-        }
-        triggers.forEach(function (trigger) {
-          trigger.addEventListener('click', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-            var pop = document.getElementById(trigger.dataset.qrTarget);
-            if (!pop) return;
-            var willOpen = !pop.classList.contains('is-open');
-            closeAll();
-            if (willOpen) {
-              pop.classList.add('is-open');
-              trigger.setAttribute('aria-expanded', 'true');
-            }
-          });
-        });
-        document.addEventListener('click', function (e) {
-          document.querySelectorAll('.qr-popover.is-open').forEach(function (pop) {
-            if (!pop.contains(e.target)) {
-              pop.classList.remove('is-open');
-              var t = document.querySelector('[data-qr-target="' + pop.id + '"]');
-              if (t) t.setAttribute('aria-expanded', 'false');
-            }
-          });
-        });
-        document.addEventListener('keydown', function (e) {
-          if (e.key === 'Escape') closeAll();
-        });
-      })();
-    </script>
 
     {% if site.google_analytics and site.google_analytics != "" %}
     <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>

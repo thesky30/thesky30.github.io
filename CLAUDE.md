@@ -1,5 +1,16 @@
 # CLAUDE.md — Project guide for AI assistants
 
+## 当前页面约定（2026-10-24 更新，优先于下方旧版说明）
+
+- 正式页面采用用户确认的本地预览版本：保留线上原有宽度、字体、正文颜色与布局。
+- 导航为房子图标 + Home，右侧 About / Blog / Projects。Home 与 About 字体一致、图标垂直居中。
+- 首屏左侧依次为中文姓名（44px）、英文姓名（24px）、MEcon @ HKU（16px）、邮箱、linkedin / github；姓名左对齐，右侧照片居中裁切。
+- 首页为 About Me / Blog 简介 / 空 Projects；介绍含“累计实习时长近3年”。
+- 博客原有大类及细分标签保留，现有三篇文章均 published: false，源文件保留，不启用 unpublished。
+- 样式使用原 _sass/minimal-light.scss 加 assets/css/site-updates.css；不加载先前 refinements.css。交互由 assets/js/refinements.js 统一管理。
+- CV 不展示。_site/、.local-preview/、output/ 和 .playwright-cli/ 为本地产物，不提交。
+- 本地构建入口为 .local-preview/jekyll.ps1 build。用户已授权此次提交并部署。
+
 个人站,基于 [yaoyao-liu/minimal-light](https://github.com/yaoyao-liu/minimal-light) Jekyll 主题做了重度定制。视觉风格参考 [junliwang.tech](https://junliwang.tech/):白底、衬线字、单栏居中、顶部 sticky 导航。
 
 ## 部署

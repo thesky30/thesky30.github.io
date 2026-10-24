@@ -1,10 +1,11 @@
 ---
+published: false
 layout: post
-title: "一份 SaaS 公司研报的四层结构"
+title: "商业模式总结：SaaS 公司研究的四个维度"
 date: 2026-05-12
 description: "拆一家公司前,我习惯把视角分四层:产品、单位经济、估值、风险。"
-category: 投研
-tags: [公司研究]
+category: 商业模式
+tags: [SaaS]
 mathjax: false
 ---
 

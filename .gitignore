@@ -7,3 +7,8 @@ Gemfile.lock
 git-update.sh
 .claude/
 .obsidian/
+.local-preview/
+
+output/
+
+.playwright-cli/

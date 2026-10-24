@@ -1,7 +1,7 @@
 # Basic Information
 title: 李骁宇
 name_pinyin: "Xiaoyu Li"   # hero 中文名下方的拼音,留空 "" 则不显示
-position: ""
+position: "MEcon @ HKU"
 affiliation: ""
 affiliation_link: ""
 email: "xiaoyu.maths(at)gmail.com"
@@ -52,8 +52,6 @@ nav_links:
     href: "/blog/"
   - label: "Projects"
     href: "/#projects"
-  - label: "Models"
-    href: "/#works"
 
 # Remote theme (used by GitHub Pages build)
 remote_theme: yaoyao-liu/minimal-light
@@ -79,3 +77,5 @@ exclude:
   - minimal-light.gemspec
   - html_source_file/
   - CLAUDE.md
+  - output/
+  - .playwright-cli/

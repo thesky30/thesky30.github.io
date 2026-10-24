@@ -1,4 +1,5 @@
 ---
+published: false
 layout: post
 title: "用 RAG 改造内部知识库:从 0 到 80 分的最短路径"
 date: 2026-05-26

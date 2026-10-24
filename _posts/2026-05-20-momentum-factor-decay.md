@@ -1,5 +1,6 @@
 ---
 layout: post
+published: false
 title: "动量因子近两年的衰减:一个简单回测笔记"
 date: 2026-05-20
 description: "把 A 股动量因子分十档跑了一遍,记录方法与几个意外。"
